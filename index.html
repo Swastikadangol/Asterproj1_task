@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:hover{
+            background-color: red;
+            color: white;
+        }
+         button:active{
+            background-color: blue;
+            color: gray;
+         }
+         button:focus{
+            border: 2px purple solid;
+         }
+
+
+         a{
+            text-decoration: none;
+         }
+
+         a:link{
+            color: blue;
+         }
+         a:visited{
+            color: purple;
+         }
+         a:hover{
+            color: red;
+            text-decoration: underline;
+         }
+         a:active{
+            color: black;
+         }
+
+        ul li:first-child{
+            font-weight: bold;
+            background-color: aqua;
+         }
+        ul li:last-child{
+            font-style: italic;
+            background-color: palevioletred;
+         }
+        ul li:nth-child(odd){
+            background-color: lightgray;
+         }
+        ul li:nth-child(even){
+            background-color: darkslategray;
+         }
+        div{
+            margin-top: 20px;
+          }
+        input:focus{
+            border-color: red;
+            outline: none;
+        }
+
+        input:checked{
+            accent-color: green;
+        }
+
+        input:disabled{
+            background-color: rgb(194, 219, 219);
+        }
+
+        div:has(h2 + p){
+            background-color: aquamarine;
+        }
+         
+    </style>
+</head>
+<body>
+    <!-- exercise 1 -->
+    <div>
+        <button>CLick</button>
+        <button>Click</button>
+        <button>Click</button>
+    </div>
+
+    <!-- exercise 2 -->
+     <a href="https://www.google.com/">Google</a>
+     <a href="https://mail.google.com/mail/u/0/">Gmail</a>
+     <a href="https://github.com/">Github</a>
+     <a href="https://www.youtube.com/">Youtube</a>
+
+     <!-- exercise 3 -->
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+
+      <!-- exercise 4 -->
+       <form method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="name" disabled><br>
+        </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="email"><br>
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                <input type="radio" name="male" value="make">Male
+                <input type="radio" name="female" value="female">Female
+                <input type="radio" name="other" value="other">Other <br>
+            </div>
+
+            <div>
+                <label for="hobbies">Hobbies</label>
+                <input type="checkbox" name="sports" value="sports">Sports
+                <input type="checkbox" name="reading" value="reading">Reading
+                <input type="checkbox" name="music" value="music">Music <br>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+       </form>
+
+       <!-- exercise 5 -->
+        <div>
+            <h2>Aster Innovations</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, eligendi! Quasi voluptate dolor voluptatum nemo autem voluptas facere, ab dolorem inventore ratione maxime mollitia eligendi, ullam sit id odit quis.</p>
+        </div>
+</body>
+</html>
